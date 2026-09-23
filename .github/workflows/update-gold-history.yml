@@ -1,0 +1,48 @@
+name: Update gold history
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: update-gold-history
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install exact dependencies
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+
+      - name: Run tests before the network update
+        run: pnpm test
+
+      - name: Update and validate public history
+        run: pnpm update-history
+
+      - name: Run tests after the update
+        run: pnpm test
+
+      - name: Commit the updated state when it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- public/gold-history.json; then
+            echo "No changes to publish."
+          else
+            git add public/gold-history.json
+            git commit -m "chore: update gold history $(date -u +%Y-%m-%d)"
+            git push
+          fi

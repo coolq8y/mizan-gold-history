@@ -1,0 +1,20 @@
+{
+  "name": "mizan-gold-history",
+  "version": "1.0.0",
+  "description": "Builds and validates Mizan's public daily gold and FX history JSON.",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc --pretty false",
+    "test": "pnpm build && node test/update.test.js",
+    "update-history": "pnpm build && node dist/updateGoldHistory.js",
+    "check": "pnpm test && pnpm update-history && pnpm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
