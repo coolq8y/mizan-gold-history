@@ -18,7 +18,6 @@ Cloudflare Pages endpoint as fallback. No API key is required.
 ## Local commands
 
 ```bash
-corepack enable
 pnpm install --frozen-lockfile
 pnpm test
 pnpm update-history
