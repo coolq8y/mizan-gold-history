@@ -1,11 +1,11 @@
 {
   "formatVersion": 1,
   "source": "fawazahmed0/currency-api (CC0-1.0), via cdn.jsdelivr.net",
-  "updatedAt": "2026-09-24T03:08:48.924Z",
+  "updatedAt": "2026-09-25T06:49:19.705Z",
   "coverage": {
     "earliestDay": "2025-09-24",
-    "latestDay": "2026-09-23",
-    "totalDays": 364
+    "latestDay": "2026-09-25",
+    "totalDays": 366
   },
   "gaps": [
     "2025-12-10"
@@ -5106,6 +5106,34 @@
         "JOD": 0.709,
         "EGP": 48.16278383
       }
+    },
+    "2026-09-25": {
+      "xauUsdPerOunce": 4269.904050986071,
+      "rates": {
+        "KWD": 0.30882894,
+        "SAR": 3.75,
+        "AED": 3.6725,
+        "QAR": 3.64,
+        "BHD": 0.376,
+        "OMR": 0.38475837,
+        "IQD": 1310.09295888,
+        "JOD": 0.709,
+        "EGP": 51.78047762
+      }
+    },
+    "2026-09-24": {
+      "xauUsdPerOunce": 4284.1781018520505,
+      "rates": {
+        "KWD": 0.3091919,
+        "SAR": 3.75,
+        "AED": 3.6725,
+        "QAR": 3.64,
+        "BHD": 0.376,
+        "OMR": 0.38461872,
+        "IQD": 1314.93398788,
+        "JOD": 0.709,
+        "EGP": 51.41709446
+      }
     }
   },
   "backfillCursor": {
@@ -5113,7 +5141,6 @@
     "complete": true
   },
   "recentlyFailedDays": {
-    "2026-09-24": "2026-09-24T02:38:19.977Z",
     "2025-12-10": "2026-09-24T03:06:46.637Z"
   }
 }
