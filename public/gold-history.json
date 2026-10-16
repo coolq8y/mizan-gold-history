@@ -1,11 +1,11 @@
 {
   "formatVersion": 1,
   "source": "fawazahmed0/currency-api (CC0-1.0), via cdn.jsdelivr.net",
-  "updatedAt": "2026-10-15T06:41:20.550Z",
+  "updatedAt": "2026-10-16T06:33:10.314Z",
   "coverage": {
     "earliestDay": "2025-09-24",
-    "latestDay": "2026-10-15",
-    "totalDays": 386
+    "latestDay": "2026-10-16",
+    "totalDays": 387
   },
   "gaps": [
     "2025-12-10"
@@ -5413,6 +5413,20 @@
         "IQD": 1513.64396871,
         "JOD": 0.709,
         "EGP": 53.10177585
+      }
+    },
+    "2026-10-16": {
+      "xauUsdPerOunce": 4182.94004633861,
+      "rates": {
+        "KWD": 0.31095652,
+        "SAR": 3.75,
+        "AED": 3.6725,
+        "QAR": 3.64,
+        "BHD": 0.376,
+        "OMR": 0.38471487,
+        "IQD": 1515.18671577,
+        "JOD": 0.709,
+        "EGP": 53.43725844
       }
     }
   },
