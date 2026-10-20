@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "source": "fawazahmed0/currency-api (CC0-1.0), via cdn.jsdelivr.net",
-  "updatedAt": "2026-10-19T07:05:21.659Z",
+  "updatedAt": "2026-10-20T06:50:11.934Z",
   "coverage": {
     "earliestDay": "2025-09-24",
     "latestDay": "2026-10-19",
@@ -5477,6 +5477,7 @@
     "complete": true
   },
   "recentlyFailedDays": {
-    "2025-12-10": "2026-09-24T03:06:46.637Z"
+    "2025-12-10": "2026-09-24T03:06:46.637Z",
+    "2026-10-20": "2026-10-20T06:50:11.934Z"
   }
 }
